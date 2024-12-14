@@ -6,21 +6,20 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import images from '~/assets/img';
 import {
   filterListProductsState,
   setListProducts,
   setListProductsState
-} from "~/redux/slices/productSlice";
-import baseUrl from '~/utils/baseUrl';
+} from "../../../redux/slices/productSlice";
+import baseUrl from '../../../utils/baseUrl';
 import ItemCollection from "../Collection/ItemCollection";
 import styles from "./Home.module.scss";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import ProductItem from './ProductItem';
-import { createCartItem, getCartProducts, increaseQuantityCartItem } from '~/redux/api/userRequest';
+import { createCartItem, getCartProducts, increaseQuantityCartItem } from '../../../redux/api/userRequest';
 import { ToastContainer, toast } from 'react-toastify';
 
-import { createCartItemNonUser, increaseQuantityCartItemNonUser } from '~/redux/api/nonUserRequest';
+import { createCartItemNonUser, increaseQuantityCartItemNonUser } from '../../../redux/api/nonUserRequest';
 
 const cx = classNames.bind(styles);
 

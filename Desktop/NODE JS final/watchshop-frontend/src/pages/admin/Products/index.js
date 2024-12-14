@@ -6,7 +6,7 @@ import React, { useEffect, useState, createContext } from "react";
 import {
     resetCurrentProduct, setListProducts, filterListProductsState, setListProductsState,
     setListProductCategories
-} from "~/redux/slices/productSlice";
+} from "../../../redux/slices/productSlice";
 
 import ProductRow from "./ProductRow";
 import styles from './Products.module.scss'
@@ -14,7 +14,7 @@ import Modal from "./Modal";
 import DropDown from "./DropDown";
 import { useDispatch, useSelector } from "react-redux";
 import axios from 'axios';
-import baseUrl from '~/utils/baseUrl';
+import baseUrl from '../../../utils/baseUrl';
 import { useRef } from "react";
 
 const cx = classNames.bind(styles)

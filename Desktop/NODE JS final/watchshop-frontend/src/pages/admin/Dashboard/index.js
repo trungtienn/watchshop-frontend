@@ -4,13 +4,12 @@ import styles from "./Dashboard.module.scss";
 import ReactStars from "react-stars";
 import Chart from "chart.js/auto";
 import { Bar, Doughnut } from "react-chartjs-2";
-import { item_product } from "~/assets/images";
 import ItemDashboard from "./ItemDashboard";
 import RevenueChart from "./RevenueChart/RevenueChart";
 import Select from 'react-select';
 import axios from "axios";
-import baseUrl from "~/utils/baseUrl";
-import convertDate from "~/utils/convertDate";
+import baseUrl from "../../../utils/baseUrl";
+import convertDate from "../../../utils/convertDate";
 
 const cx = classNames.bind(styles);
 
@@ -716,7 +715,7 @@ function Dashboard() {
           </div>
           {/* @2023 copyright */}
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <span style={{ textAlign: 'center', margin: '20px 0 30px' }}>2023 @copyright</span>
+            <span style={{ textAlign: 'center', margin: '20px 0 30px' }}>2024 @copyright</span>
           </div>
         </div>
       </div>

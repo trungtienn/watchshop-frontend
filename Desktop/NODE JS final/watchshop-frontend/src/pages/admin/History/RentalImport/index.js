@@ -2,13 +2,13 @@ import classNames from "classnames/bind";
 import { AiOutlineSearch, AiFillCaretDown } from "react-icons/ai";
 import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import baseUrl from '~/utils/baseUrl';
+import baseUrl from '../../../../utils/baseUrl';
 import axios from "axios";
-import convertDate from "~/utils/convertDate";
+import convertDate from "../../../../utils/convertDate";
 import styles from './RentalImport.module.scss'
 import RentalImportRow from "./RentalImportRow";
 import { CSVLink} from 'react-csv'
-import formatMoney from "~/utils/formatMoney";
+import formatMoney from "../../../../utils/formatMoney";
 
 const cx = classNames.bind(styles)
 

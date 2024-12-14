@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import styles from './ProductItem.module.scss'
 import classNames from 'classnames/bind';
-import { ComboBox } from '~/components/Input';
+import { ComboBox } from '../../../../components/Input';
 import { GoTrash } from "react-icons/go";
 import { useDispatch, useSelector } from 'react-redux';
-import { decreaseQuantityCartItem, deleteCartItem, increaseQuantityCartItem } from '~/redux/api/userRequest';
+import { decreaseQuantityCartItem, deleteCartItem, increaseQuantityCartItem } from '../../../../redux/api/userRequest';
 const cx = classNames.bind(styles);
 export default function ProductItem({props}) {
     const dispatch = useDispatch();

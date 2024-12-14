@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import classNames from "classnames/bind";
 import styles from "./ItemFeedback.module.scss";
-import FeedbackDetail from "~/pages/admin/Feedbacks/FeedbackDetail";
+import FeedbackDetail from "../../pages/admin/Feedbacks/FeedbackDetail";
 import axios from "axios";
-import baseUrl from "~/utils/baseUrl";
-import convertDate from "~/utils/convertDate";
+//import convertDate from "~/utils/convertDate";
+import convertDate from "../../utils/convertDate";
 const cx = classNames.bind(styles);
 
 function ItemFeedback({ item , getAllFeedbacks}) {

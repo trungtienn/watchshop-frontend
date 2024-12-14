@@ -6,10 +6,10 @@ import { FaAngleRight } from "react-icons/fa";
 import { BsCheckLg } from "react-icons/bs";
 import React from "react";
 import axios from "axios";
-import baseUrl from '~/utils/baseUrl';
+import baseUrl from '../../../utils/baseUrl';
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import convertDate from "~/utils/convertDate2";
+import convertDate from "../../../utils/convertDate2";
 
 
 import styles from './ImportProducts.module.scss'
@@ -20,7 +20,7 @@ import { toast } from "react-toastify";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useDispatch, useSelector } from "react-redux";
-import { addIntoListImportProducts, setListImportProducts, handleChangeDiscount } from "~/redux/slices/importProductsSlice";
+import { addIntoListImportProducts, setListImportProducts, handleChangeDiscount } from "../../../redux/slices/importProductsSlice";
 
 const cx = classNames.bind(styles)
 

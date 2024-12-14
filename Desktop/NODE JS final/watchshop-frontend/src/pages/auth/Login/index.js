@@ -1,11 +1,11 @@
-import { CustomeButton } from '~/components';
+import { CustomeButton } from '../../../components';
 import styles from './login.module.scss';
 import classNames from 'classnames/bind';
 import { useEffect, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { loginUser } from '~/redux/api/authRequest';
+import { loginUser } from '../../../redux/api/authRequest';
 import { useNavigate } from 'react-router-dom';
 const cx = classNames.bind(styles)
 function Login({ navSignup, navForgot }) {

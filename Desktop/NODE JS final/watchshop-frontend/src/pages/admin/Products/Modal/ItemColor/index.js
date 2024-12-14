@@ -2,7 +2,7 @@ import classNames from "classnames/bind";
 import styles from './ItemColor.module.scss'
 import { useRef, useState } from "react";
 import { useEffect } from "react";
-import images from "~/assets/img";
+import images from "../../../../../assets/img";
 import { ChromePicker } from "react-color";
 import { AiFillCaretDown, AiFillCaretUp, AiFillCaretRight, AiOutlineClose } from "react-icons/ai";
 import { RiSubtractLine } from "react-icons/ri";
@@ -12,7 +12,7 @@ import {
     handleRemoveColor,
     handleChangeColorCode, handleChangeColorName, handleColorAddImage, handleColorChangeImage,
     handleColorRemoveImage, handleColorAddSize, handleColorChangeSizeName, handleColorRemoveSize
-} from "~/redux/slices/productSlice";
+} from "../../../../../redux/slices/productSlice";
 const cx = classNames.bind(styles)
 
 function ItemColor({ index }) {

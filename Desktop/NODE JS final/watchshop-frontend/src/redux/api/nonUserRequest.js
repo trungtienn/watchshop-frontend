@@ -1,5 +1,5 @@
 import axios from "axios";
-import baseUrl from "~/utils/baseUrl";
+import baseUrl from "../../utils/baseUrl";
 import { createCartItemFailed, createCartItemStart, createCartItemSuccess, createOrderFailed, createOrderStart, createOrderSuccess, decreaseCartItemFailed, decreaseCartItemStart, decreaseCartItemSuccess, deleteCartItemFailed, deleteCartItemStart, deleteCartItemSuccess, getAllVoucherFailed, getAllVoucherStart, getAllVoucherSuccess, getCartProductsFailed, getCartProductsStart, getCartProductsSuccess, getDefaultAddressFailed, getDefaultAddressStart, getDefaultAddressSuccess, getForUProductCartFailed, getForUProductCartStart, getForUProductCartSuccess, increaseCartItemFailed, increaseCartItemStart, increaseCartItemSuccess } from "../slices/nonUserSlice";
 import { v4 as uuid } from "uuid";
 //cart

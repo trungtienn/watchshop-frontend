@@ -1,4 +1,4 @@
-import { AccountIcon, vnpayIcon, momoIcon, codIcon, zaloPayIcon, qaCodeIcon } from '~/assets/icons';
+import { AccountIcon, vnpayIcon, momoIcon, codIcon, zaloPayIcon, qaCodeIcon } from '../../../../assets/icons';
 import styles from './PaymentForm.module.scss'
 import classNames from 'classnames/bind';
 import { useState } from 'react';

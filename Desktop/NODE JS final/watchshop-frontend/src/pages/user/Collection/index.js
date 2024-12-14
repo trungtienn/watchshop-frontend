@@ -8,15 +8,15 @@ import {
     filterListProductsState,
     setListProducts,
     setListProductsState
-} from "~/redux/slices/productSlice";
-import baseUrl from '~/utils/baseUrl';
+} from "../../../redux/slices/productSlice";
+import baseUrl from '../../../utils/baseUrl';
 import styles from './Collection.module.scss';
 import ItemCollection from "./ItemCollection";
-import { createCartItem, getCartProducts, increaseQuantityCartItem } from '~/redux/api/userRequest';
+import { createCartItem, getCartProducts, increaseQuantityCartItem } from '../../../redux/api/userRequest';
 import ProductItem from '../Home/ProductItem';
 import { ToastContainer, toast } from 'react-toastify';
 import { BsCheck } from 'react-icons/bs';
-import { createCartItemNonUser, increaseQuantityCartItemNonUser } from '~/redux/api/nonUserRequest';
+import { createCartItemNonUser, increaseQuantityCartItemNonUser } from '../../../redux/api/nonUserRequest';
 
 const cx = classNames.bind(styles)
 function Collection() {

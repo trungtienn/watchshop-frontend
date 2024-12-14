@@ -1,9 +1,9 @@
 import classNames from 'classnames/bind';
 import { useEffect, useState } from 'react';
-import baseUrl from '~/utils/baseUrl';
+//import baseUrl from '~/utils/baseUrl';
 import styles from './CartPopup.module.scss';
 import { useDispatch, useSelector } from 'react-redux';
-import { getCartProducts } from '~/redux/api/userRequest';
+//import { getCartProducts } from '~/redux/api/userRequest';
 import ProductItem from './ProductItem';
 import { Link } from 'react-router-dom';
 

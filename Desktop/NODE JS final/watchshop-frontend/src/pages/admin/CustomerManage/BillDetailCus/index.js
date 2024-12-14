@@ -1,7 +1,7 @@
 import classNames from "classnames/bind";
 import { useEffect, useState } from "react";
 import styles from './BillDetailCus.module.scss'
-import convertDate from "~/utils/convertDate";
+
 
 const cx = classNames.bind(styles)
 
@@ -125,7 +125,7 @@ function BillDetailCus({ item, cusId ,totalAmount}) {
                                 {item?.orders.map((i, index) => {
                                     return (
                                         <tr key={index} className={cx('product-item')}>
-                                            <td className={cx('code')}>HD{i._id.slice(16)}</td>
+                                            {/* <td className={cx('code')}>HD{i._id.slice(16)}</td> */}
                                             <td className={cx('date')}>{convertDate(i?.orderDate)}</td>
                                             <td className={cx('payMethod')}>Thanh toán trực tiếp</td>
                                             <td className={cx('customerName')}>{i?.address?.name}</td>

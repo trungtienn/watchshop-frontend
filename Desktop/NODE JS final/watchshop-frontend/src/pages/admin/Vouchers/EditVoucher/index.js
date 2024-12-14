@@ -1,11 +1,11 @@
 import styles from './EditVoucher.module.scss';
 import { HiOutlineInformationCircle } from 'react-icons/hi'
 import classNames from 'classnames/bind';
-import { CustomeButton } from '~/components';
+import { CustomeButton } from '../../../../components';
 import { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { MdAdd } from 'react-icons/md';
-import baseUrl from '~/utils/baseUrl';
+import baseUrl from '../../../../utils/baseUrl';
 import axios from 'axios';
 import Select from 'react-select';
 import { ToastContainer, toast } from 'react-toastify';

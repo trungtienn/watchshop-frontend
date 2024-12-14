@@ -15,7 +15,7 @@ import {BiLogOut, BiMessageError} from 'react-icons/bi'
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { ToastContainer, toast } from 'react-toastify';
-import { logoutUser } from '~/redux/api/authRequest';
+import { logoutUser } from '../../../../redux/api/authRequest';
 const cx = classNames.bind(styles);
 function Sidebar() {
     const [activeItem , setActiveItem ] = useState('Dashboard')

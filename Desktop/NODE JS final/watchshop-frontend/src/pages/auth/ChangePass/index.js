@@ -1,4 +1,4 @@
-import { CustomeButton } from '~/components';
+import { CustomeButton } from '../../../components';
 import styles from './ChangePass.module.scss';
 import classNames from 'classnames/bind';
 const cx = classNames.bind(styles)

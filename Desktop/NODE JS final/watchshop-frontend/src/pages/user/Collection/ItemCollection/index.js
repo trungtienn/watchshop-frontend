@@ -2,7 +2,7 @@ import classNames from "classnames/bind";
 import { useEffect, useState } from "react";
 import styles from './ItemCollection.module.scss';
 import { useNavigate } from "react-router-dom";
-import baseUrl from "~/utils/baseUrl";
+import baseUrl from "../../../../utils/baseUrl";
 import axios from "axios";
 
 

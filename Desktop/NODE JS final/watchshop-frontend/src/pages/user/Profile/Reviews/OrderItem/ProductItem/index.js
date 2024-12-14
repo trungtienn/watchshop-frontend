@@ -3,11 +3,11 @@ import styles from './ProductItem.module.scss'
 import classNames from 'classnames/bind';
 import { MdStar } from 'react-icons/md';
 import { Rating } from '@mui/material';
-import images from '~/assets/img';
+//import images from '~/assets/img';
 import { AiOutlineClose } from 'react-icons/ai';
 import { IoMdAdd } from 'react-icons/io';
 import { useDispatch, useSelector } from 'react-redux';
-import { createReview, getAllOrderReview } from '~/redux/api/userRequest';
+import { createReview, getAllOrderReview } from '../../../../../../redux/api/userRequest';
 import { ToastContainer, toast } from 'react-toastify';
 const cx = classNames.bind(styles);
 function ProductItem({props}) {

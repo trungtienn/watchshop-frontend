@@ -1,4 +1,4 @@
-import { TextInput } from "~/components/Input";
+import { TextInput } from "../../../../../components/Input";
 import classNames from 'classnames/bind';
 import styles from './ChangePass.module.scss';
 import { IoMdLock } from 'react-icons/io'
@@ -6,8 +6,8 @@ import { useDispatch } from "react-redux";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import axios from "axios";
-import baseUrl from "~/utils/baseUrl";
-import { loginSuccess } from "~/redux/slices/authSlice";
+import baseUrl from "../../../../../utils/baseUrl";
+import { loginSuccess } from "../../../../../redux/slices/authSlice";
 const cx = classNames.bind(styles);
 
 

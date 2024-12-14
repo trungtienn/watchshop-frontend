@@ -17,10 +17,9 @@ import { useState } from "react";
 
 
 import styles from './BillDetail.module.scss'
-import DropDown from "~/pages/admin/Products/DropDown";
-import OrderItem from "~/pages/admin/Orders/OrderDetail/OrderItem";
+import DropDown from "../../../../admin/Products/DropDown";
 import BillItemRow from "./BillItemRow";
-import formatMoney from "~/utils/formatMoney";
+import formatMoney from "../../../../../utils/formatMoney";
 
 const cx = classNames.bind(styles)
 

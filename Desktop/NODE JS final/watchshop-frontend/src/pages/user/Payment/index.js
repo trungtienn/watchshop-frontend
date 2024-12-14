@@ -5,13 +5,13 @@ import { useEffect, useRef, useState } from 'react';
 import PaymentForm from './PaymentForm';
 import Cart from './Cart';
 import { BiLeftArrow } from 'react-icons/bi';
-import { createOrder, getDefaultAddress, getAPIMoMo } from '~/redux/api/userRequest';
+import { createOrder, getDefaultAddress, getAPIMoMo } from '../../../redux/api/userRequest';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
-import { resetSuccess } from '~/redux/slices/userSlice';
+import { resetSuccess } from '../../../redux/slices/userSlice';
 import Addresses from '../Profile/Addresses';
-import { Modal } from '~/components';
+import { Modal } from '../../../components';
 const cx = classNames.bind(styles);
 
 function Payment() {

@@ -4,15 +4,14 @@ import ProductItem from './ProductItem';
 import { forwardRef, useEffect, useImperativeHandle, useState } from 'react';
 import ProductForUItem from './ProductForUItem';
 import VoucherItem from './VoucherItem';
-import { VoucherIcon2 } from '~/assets/icons';
+import { VoucherIcon2 } from '../../../../assets/icons';
 import { useDispatch, useSelector } from 'react-redux';
-import { createCartItem, getAllVoucher, getCartProducts, getForUProduct, increaseQuantityCartItem } from '~/redux/api/userRequest';
+import { createCartItem, getAllVoucher, getCartProducts, getForUProduct, increaseQuantityCartItem } from '../../../../redux/api/userRequest';
 import { toast } from 'react-toastify';
-import { Modal } from '~/components';
+import { Modal } from '../../../../components';
 import Vouchers from '../../Profile/Vouchers';
-import { createCartItemNonUser, increaseQuantityCartItemNonUser } from '~/redux/api/nonUserRequest';
-import { resetCurrentProduct } from '~/redux/slices/productSlice';
-import { resetCartProduct } from '~/redux/slices/nonUserSlice';
+import { createCartItemNonUser, increaseQuantityCartItemNonUser } from '../../../../redux/api/nonUserRequest';
+
 const cx = classNames.bind(styles);
 const Cart = forwardRef(({_ref}) => {
 

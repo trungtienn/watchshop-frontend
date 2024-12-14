@@ -3,10 +3,10 @@ import OrderItem from './OrderItem';
 import styles from './Reviews.module.scss'
 import classNames from 'classnames/bind';
 import { useEffect } from 'react';
-import { getAllOrderReview } from '~/redux/api/userRequest';
+import { getAllOrderReview } from '../../../../redux/api/userRequest';
 import { BiArrowBack } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
-import { resetSuccess } from '~/redux/slices/userSlice';
+import { resetSuccess } from '../../../../redux/slices/userSlice';
 import { ToastContainer, toast } from 'react-toastify';
 const cx = classNames.bind(styles);
 

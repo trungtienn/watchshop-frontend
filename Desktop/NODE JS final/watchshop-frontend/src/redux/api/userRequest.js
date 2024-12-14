@@ -1,6 +1,6 @@
 import axios from "axios";
 import { createAddressFailed, createAddressStart, createAddressSuccess, createCartItemFailed, createCartItemStart, createCartItemSuccess, createOrderFailed, createOrderStart, createOrderSuccess, createReviewFailed, getAPIMoMoStart, getAPIMoMoSuccess, getAPIMoMoFailed ,createReviewStart, createReviewSuccess, decreaseCartItemFailed, decreaseCartItemStart, decreaseCartItemSuccess, deleteAddressFailed, deleteAddressStart, deleteAddressSuccess, deleteCartItemFailed, deleteCartItemStart, deleteCartItemSuccess, getAllAddressFailed, getAllAddressStart, getAllAddressSuccess, getAllOrderFailed, getAllOrderReviewFailed, getAllOrderReviewStart, getAllOrderReviewSuccess, getAllOrderStart, getAllOrderSuccess, getAllVoucherFailed, getAllVoucherStart, getAllVoucherSuccess, getCartProductsFailed, getCartProductsStart, getCartProductsSuccess, getDefaultAddressFailed, getDefaultAddressStart, getDefaultAddressSuccess, getForUProductCartFailed, getForUProductCartStart, getForUProductCartSuccess, increaseCartItemFailed, increaseCartItemStart, increaseCartItemSuccess, resetSuccess, updateAddressFailed, updateAddressStart, updateAddressSuccess } from "../slices/userSlice";
-import baseUrl from "~/utils/baseUrl";
+import baseUrl from "../../utils/baseUrl";
 
 //orders
 

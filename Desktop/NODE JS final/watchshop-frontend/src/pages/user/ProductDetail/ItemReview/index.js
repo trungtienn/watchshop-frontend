@@ -1,6 +1,6 @@
 import classNames from "classnames/bind";
 import styles from "./ItemReview.module.scss";
-import convertDate from "~/utils/convertDate";
+import convertDate from "../../../../utils/convertDate";
 const cx = classNames.bind(styles);
 function ItemReview({ item }) {
   return (

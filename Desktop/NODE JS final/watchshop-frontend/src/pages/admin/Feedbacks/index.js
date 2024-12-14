@@ -3,8 +3,8 @@ import classNames from "classnames/bind";
 import Select from "react-select";
 import styles from "./Feedbacks.module.scss";
 import axios from "axios";
-import baseUrl from "~/utils/baseUrl";
-import ItemFeedback from "~/components/ItemFeedback";
+import baseUrl from "../../../utils/baseUrl";
+import ItemFeedback from "../../../components/ItemFeedback";
 import { BiSearch } from "react-icons/bi";
 
 const cx = classNames.bind(styles);
@@ -122,7 +122,7 @@ function Feedbacks() {
       <footer className={cx("sticky-footer")} style={{ zIndex: 10 }}>
         <div className={cx("container")}>
           <div className="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2023</span>
+            <span>Copyright &copy; My Website 2024</span>
           </div>
         </div>
       </footer>

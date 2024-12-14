@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import { useState } from "react";
 import { IoSquareOutline, IoCheckboxSharp } from "react-icons/io5";
 import { RiDeleteBin6Line } from "react-icons/ri";
-import { removeItemImport, handleChangeUnitPriceImport } from "~/redux/slices/importProductsSlice";
+import { removeItemImport, handleChangeUnitPriceImport } from "../../../../redux/slices/importProductsSlice";
 
 import styles from './ImportProductRow.module.scss'
 import { useDispatch, useSelector } from "react-redux";

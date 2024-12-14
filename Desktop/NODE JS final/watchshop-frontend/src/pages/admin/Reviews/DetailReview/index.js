@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import classNames from "classnames/bind";
 import styles from "./DetailReview.module.scss";
-import ItemReview from "~/components/ItemReview";
+import ItemReview from "../../../../components/ItemReview";
 import { BiArrowBack } from "react-icons/bi";
 import { Link, useParams } from "react-router-dom";
 import Select from "react-select";
 import { MdStar } from "react-icons/md";
 import ProgressBar from "@ramonak/react-progress-bar";
 import axios from "axios";
-import baseUrl from "~/utils/baseUrl";
+import baseUrl from "../../../../utils/baseUrl";
 
 
 const cx = classNames.bind(styles);

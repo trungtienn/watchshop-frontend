@@ -7,13 +7,14 @@ import { IoMdClose } from "react-icons/io";
 import DetailPopup from "./DetailPopup";
 import SearchPopup from "./SearchPopup";
 import SettingPopup from "./SettingPopup";
-import Modal from "~/components/Modal";
-import { Login, SignUp, ChangePass } from "~/pages/auth";
+import Modal from "../../../../components/Modal";
+//import Modal from "~/components/Modal";
+import { Login, SignUp, ChangePass } from "../../../../pages/auth";
 import { useDispatch, useSelector } from "react-redux";
 import { BiAlignLeft } from "react-icons/bi";
 import { FaUserCircle } from "react-icons/fa";
 import CartPopup from "./CartPopup";
-import { getCartProducts } from "~/redux/api/userRequest";
+import { getCartProducts } from "../../../../redux/api/userRequest";
 import { toast } from "react-toastify";
 
 const cx = classNames.bind(styles);

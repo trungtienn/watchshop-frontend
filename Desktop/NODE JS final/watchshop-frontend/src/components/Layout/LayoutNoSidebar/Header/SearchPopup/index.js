@@ -1,7 +1,7 @@
 import axios from 'axios';
 import classNames from 'classnames/bind';
 import { useEffect, useState } from 'react';
-import baseUrl from '~/utils/baseUrl';
+import baseUrl from '../../../../../utils/baseUrl';
 import ItemSearch from './ItemSearch';
 import styles from './SearchPopup.module.scss';
 

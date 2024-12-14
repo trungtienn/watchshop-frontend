@@ -4,16 +4,16 @@ import { FaFileImport, FaFileExport } from "react-icons/fa";
 import { IoSquareOutline, IoCheckboxSharp } from "react-icons/io5";
 import React, { useEffect, useState, useRef } from "react";
 
-import convertDate from "~/utils/convertDate";
+import convertDate from "../../../utils/convertDate";
 import styles from './Order.module.scss'
 import DropDown from "../Products/DropDown";
 import OrderRow from "./OrderRow";
 import { useDispatch, useSelector } from "react-redux";
-import baseUrl from '~/utils/baseUrl';
+import baseUrl from '../../../utils/baseUrl';
 import axios from "axios";
-import { setListOrders, filterListOrder } from "~/redux/slices/orderAdminSlice";
+import { setListOrders, filterListOrder } from "../../../redux/slices/orderAdminSlice";
 import { CSVLink } from 'react-csv'
-import formatMoney from "~/utils/formatMoney";
+import formatMoney from "../../../utils/formatMoney";
 
 const cx = classNames.bind(styles)
 

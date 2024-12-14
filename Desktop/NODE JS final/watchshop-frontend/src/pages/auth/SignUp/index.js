@@ -1,5 +1,5 @@
 
-import { CustomeButton } from '~/components';
+import { CustomeButton } from '../../../components';
 import styles from './SignUp.module.scss';
 import classNames from 'classnames/bind';
 import baseUrl from '../../../utils/baseUrl';
@@ -7,7 +7,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { registerUser } from '~/redux/api/authRequest';
+import { registerUser } from '../../../redux/api/authRequest';
 import { useDispatch, useSelector } from 'react-redux';
 import { Navigate, useNavigate } from 'react-router-dom';
 const cx = classNames.bind(styles)

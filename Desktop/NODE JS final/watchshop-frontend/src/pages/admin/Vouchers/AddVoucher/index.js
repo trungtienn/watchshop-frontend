@@ -2,13 +2,13 @@ import styles from './AddVoucher.module.scss';
 import { HiOutlineInformationCircle } from 'react-icons/hi'
 import classNames from 'classnames/bind';
 import Select from 'react-select';
-import { CustomeButton } from '~/components';
+import { CustomeButton } from '../../../../components';
 import { MdAdd } from 'react-icons/md';
 import { useForm } from 'react-hook-form';
-import { dfImgVoucher } from '~/assets/images';
+import { dfImgVoucher } from '../../../../assets/images';
 import { useState } from 'react';
 import axios from 'axios';
-import baseUrl from '~/utils/baseUrl';
+import baseUrl from '../../../../utils/baseUrl';
 import { ToastContainer, toast } from 'react-toastify';
 const cx = classNames.bind(styles);
 function AddVoucher({ closeFunc, setVoucherList }) {

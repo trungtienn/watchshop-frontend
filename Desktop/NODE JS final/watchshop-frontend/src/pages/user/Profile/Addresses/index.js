@@ -5,7 +5,7 @@ import AddressPopup from './AddressPopup';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
-import { deleteAddresses, getAllAddresses } from '~/redux/api/userRequest';
+import { deleteAddresses, getAllAddresses } from '../../../../redux/api/userRequest';
 import { Link } from 'react-router-dom';
 import { BiArrowBack } from 'react-icons/bi';
 import { ToastContainer, toast } from 'react-toastify';

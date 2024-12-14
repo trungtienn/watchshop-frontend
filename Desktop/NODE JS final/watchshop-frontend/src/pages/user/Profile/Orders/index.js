@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import OrderItem from './OrderItem';
 import styles from './Orders.module.scss'
 import classNames from 'classnames/bind';
-import { getAllOrder } from '~/redux/api/userRequest';
+import { getAllOrder } from '../../../../redux/api/userRequest';
 import { useDispatch, useSelector } from 'react-redux';
 import { useState } from 'react';
 import { BiArrowBack } from 'react-icons/bi';

@@ -5,9 +5,9 @@ import BillDetailCus from "../BillDetailCus";
 import classNames from 'classnames/bind';
 
 import styles from './CusRow.module.scss'
-import convertDate from "~/utils/convertDate";
+import convertDate from "../../../../utils/convertDate";
 import axios from "axios";
-import baseUrl from "~/utils/baseUrl";
+import baseUrl from "../../../../utils/baseUrl";
 import { ToastContainer, toast } from "react-toastify";
 
 const cx = classNames.bind(styles);

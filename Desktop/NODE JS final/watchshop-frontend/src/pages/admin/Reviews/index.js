@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import classNames from "classnames/bind";
 import styles from "./Reviews.module.scss";
-import ProductReviewItem from "~/components/ProductReviewItem";
+import ProductReviewItem from "../../../components/ProductReviewItem";
 import { BiSearch } from "react-icons/bi";
 import Select from "react-select";
 import axios from "axios";
-import baseUrl from "~/utils/baseUrl";
+import baseUrl from "../../../utils/baseUrl";
 
 const cx = classNames.bind(styles);
 

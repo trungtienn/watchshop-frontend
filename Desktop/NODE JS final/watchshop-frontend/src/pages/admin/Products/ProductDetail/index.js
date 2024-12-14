@@ -11,13 +11,13 @@ import { useContext } from "react";
 import { PiWarehouseFill } from "react-icons/pi";
 import { ModalContext } from "..";
 import {  useDispatch, useSelector } from "react-redux";
-import { setCurrentProduct } from "~/redux/slices/productSlice";
+import { setCurrentProduct } from "../../../../redux/slices/productSlice";
 import ColorSize from "../ColorSize";
 
 import { useState } from "react";
 
 import axios from 'axios';
-import baseUrl from '~/utils/baseUrl';
+import baseUrl from '../../../../utils/baseUrl';
 import styles from './ProductDetail.module.scss'
 import { useRef } from "react";
 import { useEffect } from "react";

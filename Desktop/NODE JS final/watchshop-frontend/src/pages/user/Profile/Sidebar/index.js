@@ -4,10 +4,10 @@ import styles from './Sidebar.module.scss'
 import classNames from 'classnames/bind';
 import { BsArrowRight } from "react-icons/bs";
 import { useState } from 'react';
-import { VoucherIcon, LocationIcon, AccountIcon, OrderIcon, RatingIcon, QuestionIcon, LogOutIcon } from '~/assets/icons';
+import { VoucherIcon, LocationIcon, AccountIcon, OrderIcon, RatingIcon, QuestionIcon, LogOutIcon } from '../../../../assets/icons';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { logoutUser } from '~/redux/api/authRequest';
+import { logoutUser } from '../../../../redux/api/authRequest';
 import { useDispatch, useSelector } from 'react-redux';
 const cx = classNames.bind(styles);
 function Sidebar() {

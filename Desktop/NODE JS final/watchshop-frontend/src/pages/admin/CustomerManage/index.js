@@ -4,7 +4,7 @@ import classNames from 'classnames/bind';
 import Select from 'react-select';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import baseUrl from '~/utils/baseUrl';
+import baseUrl from '../../../utils/baseUrl';
 import axios from 'axios';
 import CusRow from './CusRow';
 
@@ -130,7 +130,7 @@ function CustomerManage() {
             <footer className={cx("sticky-footer")}>
                 <div className={cx("container")}>
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2023</span>
+                        <span>Copyright &copy; My Website 2024</span>
                     </div>
                 </div>
             </footer>

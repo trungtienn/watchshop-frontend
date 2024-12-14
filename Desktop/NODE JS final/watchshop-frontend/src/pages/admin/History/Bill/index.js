@@ -2,14 +2,14 @@ import classNames from "classnames/bind";
 import { AiOutlineSearch, AiFillCaretDown } from "react-icons/ai";
 import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import convertDate from "~/utils/convertDate";
-import convertDateTime from "~/utils/convertDate2";
-import baseUrl from '~/utils/baseUrl';
+import convertDate from "../../../../utils/convertDate";
+import convertDateTime from "../../../../utils/convertDate2";
+import baseUrl from '../../../../utils/baseUrl';
 import axios from "axios";
 import styles from './Bill.module.scss'
 import BillRow from "./BillRow";
 import { CSVLink} from 'react-csv'
-import formatMoney from "~/utils/formatMoney";
+import formatMoney from "../../../../utils/formatMoney";
 const cx = classNames.bind(styles)
 
 function Bill() {

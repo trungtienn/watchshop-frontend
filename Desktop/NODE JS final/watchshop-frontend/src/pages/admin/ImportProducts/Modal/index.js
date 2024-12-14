@@ -24,7 +24,7 @@ import {
     handleAddColor, handleRemoveColor, handleAddSize,
     handleRemoveSize, handleChangeSizeQuantity, handleChangeColorName,
     handleClickShowMore, handleChangeSizeName, handleSetQuantity
-} from "~/redux/slices/importProductsSlice";
+} from "../../../../redux/slices/importProductsSlice";
 
 const cx = classNames.bind(styles)
 

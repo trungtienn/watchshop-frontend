@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import styles from './AddressPopup.module.scss'
 import classNames from 'classnames/bind';
 import { AiFillExclamationCircle, AiOutlineClose } from 'react-icons/ai';
-import { ComboBox, TextInput, RadioButton } from '~/components/Input';
-import { createAddresses, updateAddresses } from '~/redux/api/userRequest';
+import { ComboBox, TextInput, RadioButton } from '../../../../../components/Input';
+import { createAddresses, updateAddresses } from '../../../../../redux/api/userRequest';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';

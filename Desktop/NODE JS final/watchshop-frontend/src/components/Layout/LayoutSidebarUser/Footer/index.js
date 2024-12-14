@@ -11,8 +11,9 @@ import {
   FaTiktok,
   FaYoutube,
 } from "react-icons/fa";
-import CustomeButton from "~/components/CustomeButton/CustomeButton";
-import ModalReport from "~/components/ModalReport/index.js";
+import CustomeButton from "../../../../components/CustomeButton/CustomeButton";
+//import CustomeButton from "~/components/CustomeButton/CustomeButton";
+import ModalReport from "../../../../components/ModalReport/index";
 
 const cx = classNames.bind(styles);
 function Footer() {

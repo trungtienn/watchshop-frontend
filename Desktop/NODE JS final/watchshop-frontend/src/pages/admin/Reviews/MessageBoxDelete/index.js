@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import baseUrl from "~/utils/baseUrl";
+import baseUrl from "../../../../utils/baseUrl";
 import classNames from "classnames/bind";
 import styles from "./MessageBoxDelete.module.scss";
 import HashLoader from "react-spinners/HashLoader";

@@ -5,7 +5,7 @@ import { RiImageAddFill } from "react-icons/ri";
 import { AiFillCloseCircle } from "react-icons/ai";
 import TextareaAutosize from "react-textarea-autosize";
 import axios from "axios";
-import baseUrl from "~/utils/baseUrl";
+import baseUrl from "../../utils/baseUrl";
 import { useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

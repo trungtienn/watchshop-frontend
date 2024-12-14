@@ -1,6 +1,6 @@
 import classNames from "classnames/bind";
 import styles from './ItemCarousel.module.scss'
-import formatMoney from "~/utils/formatMoney";
+import formatMoney from "../../../../utils/formatMoney";
 const cx = classNames.bind(styles)
 function ItemCarousel({ item }) {
     return (

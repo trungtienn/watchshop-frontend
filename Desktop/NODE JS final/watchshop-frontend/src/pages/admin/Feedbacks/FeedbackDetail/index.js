@@ -5,9 +5,9 @@ import styles from "./FeedbackDetail.module.scss";
 import { AiFillCloseCircle } from "react-icons/ai";
 import TextareaAutosize from "react-textarea-autosize";
 import { BsFillSendFill, BsFillImageFill } from "react-icons/bs";
-import ContentItemFeedback from "~/components/ContentItemFeedback";
+import ContentItemFeedback from "../../../../components/ContentItemFeedback";
 import axios from "axios";
-import baseUrl from "~/utils/baseUrl";
+import baseUrl from "../../../../utils/baseUrl";
 import HashLoader from "react-spinners/HashLoader";
 const cx = classNames.bind(styles);
 

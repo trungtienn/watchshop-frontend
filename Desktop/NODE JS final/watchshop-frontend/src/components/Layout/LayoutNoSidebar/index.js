@@ -4,10 +4,10 @@ import Header from "./Header";
 import { FaArrowDown, FaArrowUp } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import baseUrl from "~/utils/baseUrl";
+import baseUrl from "../../../utils/baseUrl";
 import { useDispatch, useSelector } from "react-redux";
 import { ToastContainer, toast } from 'react-toastify';
-import { loginSuccess } from "~/redux/slices/authSlice";
+import { loginSuccess } from "../../../redux/slices/authSlice";
 
 function LayoutNoSidebar({ children }) {
     const [openGridVoucher, setOpenGridVoucher] = useState(false);

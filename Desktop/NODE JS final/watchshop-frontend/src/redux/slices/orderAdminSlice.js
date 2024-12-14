@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import convertDate from "~/utils/convertDate";
+import convertDate from "../../utils/convertDate";
 const initialState = {
     listOrders: [],
     listOrdersOrigin: []

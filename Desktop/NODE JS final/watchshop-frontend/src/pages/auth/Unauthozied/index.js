@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { UnauthoziedIcon } from "~/assets/icons";
+import { UnauthoziedIcon } from "../../../assets/icons";
 function Unauthozied() {
     let currentUser = useSelector((state) => state.auth.login.currentUser)
     return (<>

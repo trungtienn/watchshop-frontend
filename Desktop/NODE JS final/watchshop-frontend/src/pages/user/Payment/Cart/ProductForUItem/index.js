@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react';
 import styles from './ProductForUItem.module.scss'
 import classNames from 'classnames/bind';
-import { ComboBox } from '~/components/Input';
+import { ComboBox } from '../../../../../components/Input';
 import { GoTrash } from "react-icons/go";
 import { IoMdThermometer } from 'react-icons/io';
 import { useDispatch } from 'react-redux';
-import { importItemToOrder } from '~/redux/actions';
-import Orders from '~/pages/admin/Orders';
+
 const cx = classNames.bind(styles);
 function ProductForUItem({props, handleItemToOrder}) {
     const dispatch = useDispatch();

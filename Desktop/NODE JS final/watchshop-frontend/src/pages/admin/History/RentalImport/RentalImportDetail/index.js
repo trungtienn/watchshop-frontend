@@ -17,8 +17,8 @@ import { useState } from "react";
 
 
 import styles from './RentalImportDetail.module.scss'
-import DropDown from "~/pages/admin/Products/DropDown";
-import OrderItem from "~/pages/admin/Orders/OrderDetail/OrderItem";
+import DropDown from "../../../Products/DropDown";
+import OrderItem from "../../../Orders/OrderDetail/OrderItem";
 import ImportItemRow from "./ImportItemRow";
 
 const cx = classNames.bind(styles)

@@ -1,7 +1,7 @@
 
 import classNames from 'classnames/bind';
 import styles from './UpdateInfo.module.scss';
-import { ComboBox, TextInput, RadioButton } from '~/components/Input';
+import { ComboBox, TextInput, RadioButton } from '../../../../../components/Input';
 import { FaUser } from 'react-icons/fa';
 import { BsFillCalendarFill } from 'react-icons/bs';
 import { IoIosBody } from 'react-icons/io';
@@ -10,10 +10,10 @@ import { useState } from 'react';
 import { MdEmail } from 'react-icons/md';
 import { useForm } from 'react-hook-form';
 import { AiFillExclamationCircle } from 'react-icons/ai';
-import { loginSuccess } from '~/redux/slices/authSlice';
+import { loginSuccess } from '../../../../../redux/slices/authSlice';
 import { useDispatch } from 'react-redux';
 import axios from 'axios';
-import baseUrl from '~/utils/baseUrl';
+import baseUrl from '../../../../../utils/baseUrl';
 
 const cx = classNames.bind(styles);
 function UpdateInfo({ item, notify, setPopUp }) {
@@ -74,7 +74,7 @@ function UpdateInfo({ item, notify, setPopUp }) {
             console.log(data)
             dispatch(loginSuccess({
                 ...item,
-                fullName: data.result.fullName, 
+                fullName: data.result.fullName,
                 email: data.result.email,
                 weightUser: data.result.weightUser,
                 heightUser: data.result.heightUser,

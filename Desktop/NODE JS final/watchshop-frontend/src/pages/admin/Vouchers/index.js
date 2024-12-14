@@ -6,14 +6,14 @@ import { BsEye } from 'react-icons/bs';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AiOutlineEdit } from 'react-icons/ai';
-import { CustomeButton, Modal } from '~/components';
+import { CustomeButton, Modal } from '../../../components';
 import { MdAdd } from 'react-icons/md';
 import AddVoucher from './AddVoucher';
 import EditVoucher from './EditVoucher';
 import ViewVoucher from './ViewVoucher';
 import axios from 'axios';
-import baseUrl from '~/utils/baseUrl';
-import convertDate from '~/utils/convertDate';
+import baseUrl from '../../../utils/baseUrl';
+import convertDate from '../../../utils/convertDate';
 const cx = classNames.bind(styles);
 function Vouchers() {
     const cbb = [
@@ -178,7 +178,7 @@ function Vouchers() {
             <footer className={cx("sticky-footer")} style={{ zIndex: 10 }}>
                 <div className={cx("container")}>
                     <div className="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2023</span>
+                        <span>Copyright &copy; My Website 2024</span>
                     </div>
                 </div>
             </footer>

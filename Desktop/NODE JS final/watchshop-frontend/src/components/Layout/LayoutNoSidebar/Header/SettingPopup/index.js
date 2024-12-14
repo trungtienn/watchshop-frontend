@@ -1,12 +1,12 @@
 import classNames from 'classnames/bind';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { AccountIcon, LocationIcon, OrderIcon, QuestionIcon, RatingIcon, VoucherIcon } from '~/assets/icons';
+import { AccountIcon, LocationIcon, OrderIcon, QuestionIcon, RatingIcon, VoucherIcon } from '../../../../../assets/icons';
 import styles from './SettingPopup.module.scss';
 import VoucherItem from './VoucherItem/VoucherItem';
 const cx = classNames.bind(styles);
 
-function SettingPopup({closeBtn}) {
+function SettingPopup({ closeBtn }) {
     let currentUser = useSelector((state) => state.auth.login.currentUser)
     const convertDate = (d) => {
         const date = new Date(d);
@@ -20,11 +20,11 @@ function SettingPopup({closeBtn}) {
         const formattedDate = `${day}/${month}/${year}`;
         return formattedDate;
     }
-    const settingItems = [{icon: VoucherIcon, label: 'Ví Voucher', to:'/user-profile/vouchers'}, {icon: OrderIcon, label: 'Lịch sử đơn hàng', to:'/user-profile/orders'}, {icon: LocationIcon, label: 'Sổ địa chỉ', to:'/user-profile/addresses'}, {icon: AccountIcon, label: 'Cài đặt tài khoản', to:'/user-profile/info'}, {icon: RatingIcon, label: 'Đánh giá và phản hồi', to:'/user-profile/reviews'}, {icon: QuestionIcon, label: 'FAQ & Chính sách', to:'/user-profile/policies'}];
+    const settingItems = [{ icon: VoucherIcon, label: 'Ví Voucher', to: '/user-profile/vouchers' }, { icon: OrderIcon, label: 'Lịch sử đơn hàng', to: '/user-profile/orders' }, { icon: LocationIcon, label: 'Sổ địa chỉ', to: '/user-profile/addresses' }, { icon: AccountIcon, label: 'Cài đặt tài khoản', to: '/user-profile/info' }, { icon: RatingIcon, label: 'Đánh giá và phản hồi', to: '/user-profile/reviews' }, { icon: QuestionIcon, label: 'FAQ & Chính sách', to: '/user-profile/policies' }];
     return (
         <>
             <div className={cx('container')}>
-                <h1 className={cx('greetHeader')}>Hi, Nhan Quang Le</h1>
+                <h1 className={cx('greetHeader')}>Welcome</h1>
                 <div className={cx('popupContentContainer')}>
                     <div className={cx('vouchersContainer')}>
                         <h1 className={cx('titleVoucher')}>Ưu đãi dành riêng cho bạn</h1>
@@ -33,8 +33,8 @@ function SettingPopup({closeBtn}) {
                             {
                                 currentUser?.vouchers.map((item, index) => {
                                     return (
-                                        <div key={index} style={{margin: '0 10px'}}>
-                                            <VoucherItem  voucherCode={item.voucherCode} voucherDes={item.description} voucherOutDate={convertDate(item.expiredDate)}/>
+                                        <div key={index} style={{ margin: '0 10px' }}>
+                                            <VoucherItem voucherCode={item.voucherCode} voucherDes={item.description} voucherOutDate={convertDate(item.expiredDate)} />
 
                                         </div>
                                     )
@@ -48,11 +48,11 @@ function SettingPopup({closeBtn}) {
                             {
                                 settingItems.map((item, index) => {
                                     return (
-                                        <Link to={item.to} key={index} style={{cursor: 'pointer', width: '128px', borderRadius: '10px', padding: '15px 20px', margin: '7px', backgroundColor: '#f1f1f1', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center'}}>
-                                            <div style={{width: '40px', height: '40px'}}>
-                                                <img style={{width: '100%', height: '100%'}} src={item.icon} alt='img'/>
+                                        <Link to={item.to} key={index} style={{ cursor: 'pointer', width: '128px', borderRadius: '10px', padding: '15px 20px', margin: '7px', backgroundColor: '#f1f1f1', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center' }}>
+                                            <div style={{ width: '40px', height: '40px' }}>
+                                                <img style={{ width: '100%', height: '100%' }} src={item.icon} alt='img' />
                                             </div>
-                                            <span style={{color: 'black', textAlign: 'center'}}>{item.label}</span>
+                                            <span style={{ color: 'black', textAlign: 'center' }}>{item.label}</span>
                                         </Link>
                                     )
                                 })
@@ -65,7 +65,7 @@ function SettingPopup({closeBtn}) {
                         <div className={cx('btnToProfile')}>
                             <span className={cx('textToProfile')}>Đi đến tài khoản</span>
                         </div>
-                    </label>  
+                    </label>
                 </Link>
             </div>
         </>

@@ -22,10 +22,10 @@ import styles from './Modal.module.scss'
 import 'react-quill/dist/quill.snow.css'
 import ReactQuill from "react-quill";
 import { useDispatch, useSelector } from "react-redux";
-import { handleChangeInputText, handleAddNewColor, filterListProductsState } from "~/redux/slices/productSlice";
+import { handleChangeInputText, handleAddNewColor, filterListProductsState } from "../../../../redux/slices/productSlice";
 
 import axios from 'axios';
-import baseUrl from '~/utils/baseUrl';
+import baseUrl from '../../../../utils/baseUrl';
 import { object, string, number, date, InferType } from 'yup';
 
 

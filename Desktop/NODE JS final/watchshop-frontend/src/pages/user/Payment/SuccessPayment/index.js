@@ -1,6 +1,6 @@
-import { SuccessIcon } from "~/assets/icons";
+import { SuccessIcon } from "../../../../assets/icons";
 import axios from "axios";
-import baseUrl from "~/utils/baseUrl";
+import baseUrl from "../../../../utils/baseUrl";
 import { useEffect, useRef, useState } from "react";
 function SuccessPayment() {
     const url = new URL(window.location.href);

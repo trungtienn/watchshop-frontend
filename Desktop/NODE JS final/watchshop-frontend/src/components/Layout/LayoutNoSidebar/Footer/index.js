@@ -4,7 +4,7 @@ import classNames from "classnames/bind";
 import styles from "./Footer.module.scss";
 import { PiPhoneCall } from "react-icons/pi";
 import { MdEmail } from "react-icons/md";
-import ModalReport from "~/components/ModalReport/index.js";
+import ModalReport from "../../../../components/ModalReport/index";
 
 import {
   FaFacebook,
@@ -13,7 +13,8 @@ import {
   FaTiktok,
   FaYoutube,
 } from "react-icons/fa";
-import CustomeButton from "~/components/CustomeButton/CustomeButton";
+import CustomeButton from "../../../../components/CustomeButton/CustomeButton";
+//components/CustomeButton/CustomeButton
 import { useState } from "react";
 const cx = classNames.bind(styles);
 function Footer() {

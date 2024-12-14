@@ -1,7 +1,7 @@
 import { Modal } from "bootstrap";
 import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { UnauthoziedIcon } from "~/assets/icons";
+import { UnauthoziedIcon } from "../../../assets/icons";
 import Login from "../Login";
 import SignUp from "../SignUp";
 import ChangePass from "../ChangePass";

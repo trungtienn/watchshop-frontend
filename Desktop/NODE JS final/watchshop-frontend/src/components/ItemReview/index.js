@@ -9,11 +9,11 @@ import { BsFillImageFill, BsFillSendFill } from "react-icons/bs";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
 import axios from "axios";
-import baseUrl from "~/utils/baseUrl";
-import convertDate from "~/utils/convertDate";
+import baseUrl from "../../utils/baseUrl";
+import convertDate from "../../utils/convertDate";
 import HashLoader from "react-spinners/HashLoader";
 import { MdDeleteForever } from "react-icons/md";
-import MessageBoxDelete from "~/pages/admin/Reviews/MessageBoxDelete";
+import MessageBoxDelete from "../../pages/admin/Reviews/MessageBoxDelete";
 
 const cx = classNames.bind(styles);
 
